@@ -1,0 +1,24 @@
+{
+    "name": "saxonica-issue-5021",
+    "description": "",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Yury Palyanitsa"
+    },
+    "main": "./main.js",
+    "dependencies": {
+        "saxon-js": "^2.2.0"
+    },
+    "devDependencies": {
+        "fs-extra": "^10.0.0",
+        "xslt3": "^2.2.0"
+    },
+    "scripts": {
+        "start": "node main.js",
+        "compile:xslt": "xslt3 -t -xsl:./stylesheet.xslt -export:./stylesheet.sef.json -nogo"
+    },
+    "engines": {
+        "node": ">=14"
+    }
+}
